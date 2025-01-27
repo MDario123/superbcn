@@ -32,7 +32,7 @@ Nothing but the normal ones
 
 ## Production Installation instructions
 
--   `sudo apt install php composer php-xml php-bcmath php-sqlite3`
+-   `sudo apt install php composer php-xml php-bcmath php-sqlite3 php-curl`
 -   Create a directory for the project and cd into it
 -   Clone the project into this directory (`git clone https://github.com/ndeblauw/superbcn.git  .`)
 -   run `composer install`
