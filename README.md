@@ -29,3 +29,15 @@ Nothing but the normal ones
 -   if using sqlite: do execute `touch database/database.sqlite`
 -   and then migrate the tables: `php artisan migrate`
 -   and then seed date: `php artisan db:seed`.
+
+## Production Installation instructions
+
+-   `sudo apt install php composer php-xml php-bcmath php-sqlite3`
+-   Create a directory for the project and cd into it
+-   Clone the project into this directory (`git clone https://github.com/ndeblauw/superbcn.git  .`)
+-   run `composer install`
+-   Create a .env for your prod environment: `cp .env.example .env` and adjust the settings (local domain, database, etc)
+-   Set the `APP_ENV=production` and `APP_DEBUG=false`
+-   Set the encryption key in the .env: `php artisan key:generate`
+-   if using sqlite: do execute `touch database/database.sqlite`
+-   and then migrate the tables: `php artisan migrate`
