@@ -56,6 +56,20 @@ return [
             'use_path_style_endpoint' => env('AWS_USE_PATH_STYLE_ENDPOINT', false),
             'throw' => false,
         ],
+        'sftp' => [
+            'driver' => 'sftp',
+            'host' => env('SFTP_HOST'),
+
+            // Settings for basic authentication...
+            'username' => env('SFTP_USERNAME'),
+            'password' => env('SFTP_PASSWORD'),
+
+            // Settings for file / directory permissions...
+            'visibility' => 'private', // `private` = 0600, `public` = 0644
+            'directory_visibility' => 'private', // `private` = 0700, `public` = 0755
+
+            'root' => env('SFTP_ROOT', 'uploads'),
+        ],
 
     ],
 

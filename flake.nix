@@ -17,6 +17,7 @@
             # PHP and Composer
             php
             phpPackages.composer
+            sqlite-interactive
           ];
         };
       }
