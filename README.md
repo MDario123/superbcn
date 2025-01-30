@@ -39,6 +39,7 @@ Nothing but the normal ones
 -   Create a .env for your prod environment: `cp .env.example .env` and adjust the settings (local domain, database, etc)
 -   Set in `.env`: `APP_ENV=production`, and `APP_DEBUG=false`
 -   Set in `.env`: `SFTP_HOST`, `SFTP_USERNAME`, and `SFTP_PASSWORD`
+-   Set in `.env`: `MAIL_MAILER`, `MAIL_FROM_ADDRESS`, `MAIL_FROM_NAME`, `POSTMARK_TOKEN`, and `POSTMARK_MESSAGE_STREAM_ID`
 -   Set the encryption key in the .env: `php artisan key:generate`
 -   if using sqlite: do execute `touch database/database.sqlite`
 -   and then migrate the tables: `php artisan migrate`
